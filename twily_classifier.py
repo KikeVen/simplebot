@@ -48,9 +48,10 @@ def trainer():
 
 
 if __name__ == "__main__":
-    """ you could make the testing a bit more flexible if you allow 
-    the string to be passed as an argument. Then you can show the positive 
-    and negative probabilities of several example sentences."""
-    
-    classy = trainer().prob_classify("I didn't find this helpful")
-    print(f'Probability of being negative: {round(classy.prob("neg"), 2)}')
+    user_input = "Do you have information on the Twilio SDK"
+    classy = trainer().prob_classify(user_input)
+    print()
+    print(f'String:  {user_input}')
+    print(f'---------{len(user_input) * "-"}+')
+    print(f'Negative probability: {classy.prob("neg")}')
+    print(f'Positive probability: {classy.prob("pos")}')
