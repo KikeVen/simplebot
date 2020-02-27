@@ -39,11 +39,11 @@ def simplebot(user):
     filtered_input = [w for w in token_input if w not in STOP_WORDS]
 
     response_set = set()
-    for list in CONVERSATION:
-        for sentence in list:
+    for con_list in CONVERSATION:
+        for sentence in con_list:
             sentence_split = sentence.split()
             if set(filtered_input).intersection(sentence_split):
-                response_set.update(list)
+                response_set.update(con_list)
 
     if not response_set:
         return "I am sorry, I don't have an answer, ask again"
