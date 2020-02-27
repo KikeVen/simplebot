@@ -24,7 +24,6 @@ twilio_knowledge = [
     ("mailing address", "You can email our corporate headquaters at hello@craft.co "),
     ("chatterbot", "library making it easy to generate automated responses to a user’s input, visit https://chatterbot.readthedocs.io/en/stable/"),
     ("textblob", "library for processing textual data, please visit https://textblob.readthedocs.io/en/dev/")
-    # ("", ""),
 ]
 
 classifier = ["silly", "dumb", "stupid", "I'dont think so", "I don't care",
@@ -43,7 +42,6 @@ for topic, description in twilio_knowledge:
     trainer.train([
         f"{topic}",
         f"Ok sure, {description}"
-        # f"Ok, here is the {topic} information you are looking for: {description}"
     ])
 
 for i in classifier:
