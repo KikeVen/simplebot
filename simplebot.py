@@ -60,8 +60,9 @@ def escalation(uinput):
     simultaneously sending user_input to simplebot() for a
     response"""
 
-    live_rep = f"Hi, I am Susan your live representative.\
- I see here {BOT_NAME} is unable to help you, what can I do for you?"
+    live_rep = f"We apologize {BOT_NAME} is unable to assist \
+    you, we are getting a live representative for you, \
+    please stay with us ..."
 
     sentiment(uinput)
     list_len = len(neg_distribution)
