@@ -2,11 +2,11 @@
 
 Simplebot is a chatbot with sentiment analysis capabilities. It integrates with Flask.
 
-![Single user chat session](media\simplebot.gif)
+![Single user chat session](/media/simplebot.gif)
 
 Currently Simplebot is a single user proof of consept. If you would like to read the implementation tutorial, please visit the [Twilio blogs](https://www.twilio.com/blog/build-whatsapp-bot-sentiment-analysis-python-twilio).
 
-[![Tutorial splash](media\tutorial_splash.png)](https://www.twilio.com/blog/build-whatsapp-bot-sentiment-analysis-python-twilio)
+[![Tutorial splash](/media/tutorial_splash.png)](https://www.twilio.com/blog/build-whatsapp-bot-sentiment-analysis-python-twilio)
 
 To grow this script into a more capable chatbot there are number modifications needed.
 
